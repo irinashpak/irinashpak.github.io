@@ -17,7 +17,7 @@
     </h2>
 
     <div class="choice">
-      <img src="images/adventure.jpg">
+      <img src="images/adventure.jpg" >
       <button > <a href="adventure.html">Adventure</a> </button>
     </div>
 
@@ -44,7 +44,55 @@
       </nav>
     </div> -->
 
-    <h2 class="clear">Donate some money if you find it helpful!</h2>
+    <h2 class="clear" id="cap">Donate if you find it helpful!</h2>
+
+    <div id=form>
+      <form>
+       <fieldset>
+         <legend>Your Contact Info</legend>
+
+         <div class="form-row">
+          <label for="name">Your Name </label>
+          <div class="name-fields">
+            <input type="text" name="name[first]" placeholder="First" id="name" autofocus>
+            <input type="text" name="name [last]" placeholder="Last">
+          </div>
+         </div>
+
+         <div class="form-row">
+          <label for="email">E-mail</label>
+          <div class="email">
+            <input type="email" name="email" class="email" placeholder="mail@mail.com">
+          </div>
+         </div>
+       </fieldset> 
+
+       <fieldset>
+         <legend> Were we Helpful &amp; Fun? </legend>
+
+         <div class="form-row">
+          <label>How Fun?</label>
+          <select>
+            <option>Select One</option>
+            <optgroup label="FUN">
+              <option>Extra Fun</option>
+              <option>Simply Fun</option>
+            </optgroup>
+            <optgroup label="Boring...">
+              <option>Not Helpful</option>
+              <option>Tell us Why Below</option>
+            </optgroup>
+          </select>
+         </div>
+
+         <div class="form-row">
+          <label for="here-is-why">Tell us why?</label>
+          <textarea name="here-is-why" id="here-is-why"></textarea>
+         </div>
+       </fieldset>
+
+      </form>
+    </div>
 
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/app.js"> </script>
